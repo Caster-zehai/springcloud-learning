@@ -44,6 +44,7 @@ public class UserService {
         return new Result("服务调用失败", 500);
     }
 
+    //使用ignoreExceptions忽略某些异常降级，此处忽略了空指针异常的情况，当空指针异常时不启用服务降级
     @HystrixCommand(fallbackMethod = "fallbackMethod2", ignoreExceptions = {NullPointerException.class})
     public Result getUserException(Long id) {
         if (id == 1) {
@@ -60,6 +61,13 @@ public class UserService {
         return new Result("服务调用失败", 500);
     }
 
+    /**
+     * fallbackMethod：指定服务降级处理方法；
+     * ignoreExceptions：忽略某些异常，不发生服务降级；
+     * commandKey：命令名称，用于区分不同的命令；
+     * groupKey：分组名称，Hystrix会根据不同的分组来统计命令的告警及仪表盘信息；
+     * threadPoolKey：线程池名称，用于划分线程池。
+     */
     @HystrixCommand(fallbackMethod = "fallbackMethod1",
             commandKey = "getUserCommand",
             groupKey = "getUserGroup",
@@ -85,6 +93,7 @@ public class UserService {
         return String.valueOf(id);
     }
 
+    //@CacheRemove：移除缓存，需要指定commandKey。
     @HystrixCommand
     @CacheRemove(commandKey = "getUserCache", cacheKeyMethod = "getCacheKey")
     public Result removeCache(Long id) {
@@ -92,6 +101,8 @@ public class UserService {
         return restTemplate.postForObject(userServiceUrl + "/user/delete/{1}", null, Result.class, id);
     }
 
+    //Hystrix中提供了@HystrixCollapser用于合并请求，从而达到减少通信消耗及线程数量的效果。
+    //100毫秒进行一次请求合并
     @HystrixCollapser(batchMethod = "listUsersByIds",collapserProperties = {
             @HystrixProperty(name = "timerDelayInMilliseconds",value = "100")
     })
