@@ -1,5 +1,5 @@
 server:
-  port: 8401
+  port: 8402
 
 spring:
   application:
@@ -15,8 +15,6 @@ eureka:
 service-url:
   user-service: http://user-service/
 
-#需要开启监控
-#  使用该配置时需要在pom.xml配置文件中添加spring-boot-starter-actuator的依赖，否则会Cannot resolve configuration property
 management:
   endpoints:
     web:
