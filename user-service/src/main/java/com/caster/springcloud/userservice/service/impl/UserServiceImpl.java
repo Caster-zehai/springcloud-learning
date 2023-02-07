@@ -60,7 +60,7 @@ public class UserServiceImpl implements UserService {
     @PostConstruct
     public void initData(){
         userList=new ArrayList<>();
-        userList.add(new User(1L, "jourwon", "123456"));
+        userList.add(new User(1L, "caster", "123456"));
         userList.add(new User(2L, "andy", "123456"));
         userList.add(new User(3L, "mark", "123456"));
     }

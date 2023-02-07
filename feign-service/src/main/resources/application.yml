@@ -11,3 +11,11 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8001/eureka/
+#在Feign中开启Hystrix
+feign:
+  circuit breaker:
+    enabled: true
+#配置UserService的日志级别为debug。
+logging:
+  level:
+    com.caster.springcloud.feignservice.service: debug #这里前缀要填整个包的路径

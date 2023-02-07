@@ -1,12 +1,13 @@
 package com.caster.springcloud.feignservice.service;
 
 import com.caster.springcloud.feignservice.pojo.*;
+import com.caster.springcloud.feignservice.service.impl.UserFallbackService;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(value = "user-service",fallback = UserFallbackService.class)
+@FeignClient(value = "user-service/user", fallback = UserFallbackService.class)
 public interface UserService {
     @PostMapping("/insert")
     public Result insert(@RequestBody User user);
