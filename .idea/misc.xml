@@ -14,6 +14,10 @@
         <option value="$PROJECT_DIR$/hystrix-dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/turbine-service/pom.xml" />
         <option value="$PROJECT_DIR$/feign-service/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-ribbon-service/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-config-client/pom.xml" />
       </list>
     </option>
   </component>

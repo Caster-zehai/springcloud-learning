@@ -1,0 +1,23 @@
+server:
+  port: 8308
+
+spring:
+  application:
+    name: nacos-ribbon-service
+  cloud:
+    nacos:
+      discovery:
+        # 配置Nacos地址
+        server-addr: http://localhost:8848
+    loadbalancer:
+      ribbon:
+        enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+service-url:
+  nacos-user-service: http://nacos-user-service
