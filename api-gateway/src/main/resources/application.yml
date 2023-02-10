@@ -1,0 +1,28 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: api-gateway
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      routes:
+        # 路由的ID(自定义)
+        - id: path_route
+          # 匹配后路由地址
+          uri: http://localhost:8308/user/{id}
+          predicates:
+            # 断言，路径相匹配的进行路由
+            - Path=/user/{id}
+            - Method=GET
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

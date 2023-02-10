@@ -16,6 +16,7 @@
         <module name="nacos-config-client" />
         <module name="nacos-user-service" />
         <module name="hystrix-dashboard" />
+        <module name="api-gateway" />
         <module name="ribbon-service" />
         <module name="feign-service" />
         <module name="nacos-ribbon-service" />
@@ -24,6 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-security-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />

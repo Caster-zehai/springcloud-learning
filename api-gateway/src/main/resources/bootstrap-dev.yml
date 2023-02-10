@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    nacos:
+      server-addr: localhost:8848 # 当同时使用服务发现和配置管理时，未避免配置两次server-addr，可以将服务地址写在这里
+      discovery:
+        #        server-addr: localhost:9000
+        namespace: 68acbd84-3898-48df-b103-afb0b45aee1e # 命名空间ID
+        group: ${spring.profiles.active}  # 组名
+      config:
+        #        server-addr: localhost:9000
+        namespace: 68acbd84-3898-48df-b103-afb0b45aee1e
+        group: ${spring.profiles.active}
+        file-extension: yaml  # 配置内容的数据格式
+        extension-configs[0]:
+          data-id: ${spring.application.name}-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+          group: ${spring.profiles.active}
+        extension-configs[1]:
+          data-id: ${spring.application.name}.${spring.cloud.nacos.config.file-extension}
+          group: public

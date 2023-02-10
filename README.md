@@ -18,7 +18,7 @@ Nacos：来自于SpringCloudAlibaba，在企业中经过了百万级注册考验
 
 服务调用：
 
-Ribbon：也进入了维护状态，停止更新了，但是Spring官方还在使用（轻度患者）。
+Ribbon：也进入了维护状态，停止更新了，但是Spring官方还在使用（轻度患者）。nacos新版本已不支持netflix ribbon，使用loadbalancer代替
 
 LoadBalancer：Spring官方推出的一个新的组件，打算逐渐取代掉Ribbon，但是现在还处于萌芽状态。
 

@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: 68acbd84-3898-48df-b103-afb0b45aee1e # 命名空间ID
+        group: ${spring.profiles.active}  # 分组名
