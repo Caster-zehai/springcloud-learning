@@ -9,6 +9,7 @@
         <module name="turbine-service" />
         <module name="hystrix-service" />
         <module name="eureka-security-server" />
+        <module name="nacos-sentinel" />
         <module name="zuul-proxy" />
         <module name="user-service" />
         <module name="eureka-server" />
@@ -34,6 +35,7 @@
       <module name="hystrix-service" options="-parameters" />
       <module name="nacos-config-client" options="-parameters" />
       <module name="nacos-ribbon-service" options="-parameters" />
+      <module name="nacos-sentinel" options="-parameters" />
       <module name="nacos-user-service" options="-parameters" />
       <module name="ribbon-service" options="-parameters" />
       <module name="turbine-service" options="-parameters" />

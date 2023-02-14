@@ -2,7 +2,10 @@
 用于个人学习springcloud
 
 nacos使用的版本为nacos-server-2.2.0
-
+下载地址：https://github.com/alibaba/nacos/releases
+sentinel Dashboard使用的版本为v1.8.1
+下载地址：https://github.com/alibaba/Sentinel/releases
+启动命令：java -Dserver.port=8090 -Dcsp.sentinel.dashboard.server=localhost:8090 -Dproject.name=sentinel-dashboard -jar sentinel-dashboard-1.8.1.jar
 
 # 延伸阅读
 ![img.png](img.png)
@@ -34,7 +37,7 @@ Hystrix：官网不推荐使用，但是中国企业中还在大规模使用。
 
 Resilience4J：官网推荐使用，但是国内很少用这个。
 
-Sentienl：来自于SpringCloudAlibaba，在中国企业替换Hystrix的组件，国内强烈建议使用。
+Sentienl：来自于SpringCloudAlibaba，在中国企业替换Hystrix的组件，国内强烈建议使用。实现资源流控、降级、热点、授权.
 
 服务网关：
 
