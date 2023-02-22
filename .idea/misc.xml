@@ -20,6 +20,8 @@
         <option value="$PROJECT_DIR$/nacos-config-client/pom.xml" />
         <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/nacos-sentinel/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/multithreading-learning/pom.xml" />
       </list>
     </option>
   </component>

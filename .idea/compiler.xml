@@ -13,6 +13,8 @@
         <module name="zuul-proxy" />
         <module name="user-service" />
         <module name="eureka-server" />
+        <module name="nacos-rabbitmq" />
+        <module name="multithreading-learning" />
         <module name="eureka-client" />
         <module name="nacos-config-client" />
         <module name="nacos-user-service" />
@@ -33,7 +35,9 @@
       <module name="feign-service" options="-parameters" />
       <module name="hystrix-dashboard" options="-parameters" />
       <module name="hystrix-service" options="-parameters" />
+      <module name="multithreading-learning" options="-parameters" />
       <module name="nacos-config-client" options="-parameters" />
+      <module name="nacos-rabbitmq" options="-parameters" />
       <module name="nacos-ribbon-service" options="-parameters" />
       <module name="nacos-sentinel" options="-parameters" />
       <module name="nacos-user-service" options="-parameters" />
