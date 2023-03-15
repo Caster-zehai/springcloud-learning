@@ -9,6 +9,12 @@ spring:
     host: localhost
     username: guest
     password: guest
+    #新版本使用这个即可 confirm模式
+    publisher-confirm-type: correlated
+    #老版本的话用下面这个即可开启confirm确认模式
+    #publisher-confirms: true
+    #开启确认模式
+    publisher-returns: true
   cloud:
     nacos:
       discovery:
