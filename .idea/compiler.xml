@@ -14,6 +14,7 @@
         <module name="user-service" />
         <module name="eureka-server" />
         <module name="nacos-rabbitmq" />
+        <module name="kafka-test" />
         <module name="multithreading-learning" />
         <module name="eureka-client" />
         <module name="nacos-config-client" />
@@ -25,6 +26,10 @@
         <module name="nacos-ribbon-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="kafka-consumer" target="1.8" />
+      <module name="kafka-producer" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -35,6 +40,9 @@
       <module name="feign-service" options="-parameters" />
       <module name="hystrix-dashboard" options="-parameters" />
       <module name="hystrix-service" options="-parameters" />
+      <module name="kafka-consumer" options="-parameters" />
+      <module name="kafka-producer" options="-parameters" />
+      <module name="kafka-test" options="-parameters" />
       <module name="multithreading-learning" options="-parameters" />
       <module name="nacos-config-client" options="-parameters" />
       <module name="nacos-rabbitmq" options="-parameters" />

@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/nacos-sentinel/pom.xml" />
         <option value="$PROJECT_DIR$/nacos-rabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/multithreading-learning/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-test/pom.xml" />
       </list>
     </option>
   </component>

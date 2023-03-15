@@ -2,13 +2,17 @@
 用于个人学习springcloud
 
 nacos使用的版本为nacos-server-2.2.0
+
 下载地址：https://github.com/alibaba/nacos/releases
+
 sentinel Dashboard使用的版本为v1.8.1
+
 下载地址：https://github.com/alibaba/Sentinel/releases
+
 启动命令：java -Dserver.port=8090 -Dcsp.sentinel.dashboard.server=localhost:8090 -Dproject.name=sentinel-dashboard -jar sentinel-dashboard-1.8.1.jar
 
 # 延伸阅读
-![img.png](img.png)
+![img.png](./img.png)
 服务注册中心：
 
 Eureka：官方停止更新，并且已经有更好的替代产品了，可以使用，但是官方已经不建议使用了（重度患者）。
@@ -41,7 +45,7 @@ Sentienl：来自于SpringCloudAlibaba，在中国企业替换Hystrix的组件�
 
 服务网关：
 
-Zuul：Netflix 公司产品，公司内部产生分歧，有的人想自己出一个Zuul2。
+Zuul：Netflix 公司产品，公司内部产生分歧，有的人想自己出一个Zuul2。//Zuul与现版本springboot不兼容
 
 Zuul2：也是Netflix 公司准备出的产品，但是由于内部分歧，所以Zuul2已经胎死腹中了。
 
