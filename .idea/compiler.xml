@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -18,6 +19,7 @@
         <module name="multithreading-learning" />
         <module name="eureka-client" />
         <module name="nacos-config-client" />
+        <module name="zookeeper-provider" />
         <module name="nacos-user-service" />
         <module name="hystrix-dashboard" />
         <module name="api-gateway" />
@@ -52,6 +54,7 @@
       <module name="ribbon-service" options="-parameters" />
       <module name="turbine-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
+      <module name="zookeeper-provider" options="-parameters" />
       <module name="zuul-proxy" options="-parameters" />
     </option>
   </component>

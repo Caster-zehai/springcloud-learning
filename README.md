@@ -1,5 +1,5 @@
 # 工程简介
-用于个人学习springcloud
+用于个人学习springcloud,持续更新中
 
 nacos使用的版本为nacos-server-2.2.0
 
@@ -10,6 +10,10 @@ sentinel Dashboard使用的版本为v1.8.1
 下载地址：https://github.com/alibaba/Sentinel/releases
 
 启动命令：java -Dserver.port=8090 -Dcsp.sentinel.dashboard.server=localhost:8090 -Dproject.name=sentinel-dashboard -jar sentinel-dashboard-1.8.1.jar
+
+zookeeper下载的版本为 apache-zookeeper-3.8.1
+
+需要修改conf下的zoo_sample.cfg为zoo.cfg,并添加dataDir和dataLogDir路径填写kafka所在的路径;dataDir是zookeeper存放数据的地方，dataLogDir是存放zookeeper日志的地方
 
 # 延伸阅读
 ![img.png](./img.png)
