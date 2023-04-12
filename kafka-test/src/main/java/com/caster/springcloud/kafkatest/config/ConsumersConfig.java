@@ -14,7 +14,6 @@ public class ConsumersConfig {
      * 消费topic log中的消息
      *
      * @return java.util.function.Consumer<com.example.kafka.entity.Person>
-     * @Date 2020-12-27
      **/
     @Bean
     public Consumer<Person> logC() {
@@ -29,7 +28,6 @@ public class ConsumersConfig {
      * 消费topic addAge中的消息
      *
      * @return java.util.function.Consumer<com.example.kafka.entity.Person>
-     * @Date 2020-12-27
      **/
     @Bean
     public Consumer<Person> addAgeC(){

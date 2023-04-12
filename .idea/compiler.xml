@@ -11,6 +11,7 @@
         <module name="hystrix-service" />
         <module name="eureka-security-server" />
         <module name="nacos-sentinel" />
+        <module name="spring-kafka" />
         <module name="zuul-proxy" />
         <module name="user-service" />
         <module name="eureka-server" />

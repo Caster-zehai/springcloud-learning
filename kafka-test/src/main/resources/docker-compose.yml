@@ -9,8 +9,7 @@ services:
       - "2181:2181"
     container_name: zookeeper
 
-  # kafka version: 1.1.0
-  # scala version: 2.12
+
   kafka1:
     image: wurstmeister/kafka
     ports:

@@ -24,6 +24,7 @@
         <option value="$PROJECT_DIR$/multithreading-learning/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-test/pom.xml" />
         <option value="$PROJECT_DIR$/zookeeper-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-kafka/pom.xml" />
       </list>
     </option>
   </component>
